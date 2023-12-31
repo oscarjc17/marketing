@@ -1,3 +1,109 @@
-.logo{
-   max-width: 120px;
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.nav{
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    --url-menu: url("../img/menu.svg");
+    --opacity-menu: 0;
+    --events-menu: none;
+}
+
+.nav:has(input:checked){
+    --opacity-menu: 1;
+    --events-menu: unset;
+    --url-menu: url("../img/close.svg");
+}
+
+.nav__logo{
+    width: 60%;
+    max-width: 100px;
+}
+
+.nav__img{
+    width: 70%;
+    display: block;
+}
+
+.nav__menu{
+    position: absolute;
+    top: 80px;
+    inset-inline: 0;
+    padding: 30px 5%;
+    background-color: white;
+
+    transition: .4s opacity;
+
+    opacity: var(--opacity-menu);
+    pointer-events: var(--events-menu);
+}
+
+.nav__links{
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.nav__link{
+    color: #100606;
+    text-decoration: none;
+}
+
+.nav__label{
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    background-image: var(--url-menu);
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+
+    transition: background-image .4s;
+}
+
+.nav__buttons{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn{
+    color: black;
+    text-align: center;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    background-color: #e0dcdc;
+    border-radius: 4px;
+
+    flex-grow: 1;
+}
+
+.btn--black{
+    background-color: black;
+    color: white;
+}
+
+[id="menu"]{
+    display: none;
 }

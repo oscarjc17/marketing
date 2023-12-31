@@ -3,38 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'web/css/style.css' %}">
 </head>
 <body>
     
-    <header>
-        <div>
-            <img class="logo" src="{% static 'web/img/logo.svg' %}" alt="logo">
-        </div>  
-    </header>    
-   
-    <nav>
-        <ul>
-            <li><a href="#">Vehicles</a></li>
-            <li><a href="#">Energy</a></li>
-            <li><a href="#">Charging</a></li>
-            <li><a href="#">Discover</a></li>
-            <li><a href="#">Shop</a></li>
-        </ul>
-    </nav>
+    <header class="hero">
 
-    <nav>
-        <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-        </ul>
-    </nav>
+        <nav class="nav container">
+            
+            <figure class="nav__logo">
+                <a href="#"><img src="{% static 'web/img/yo.png' %}" alt="" class="nav__img"></a>
+            </figure>
 
+                <div class="nav__menu">
+
+                    <ul class="nav__links">
+
+                        <li class="nav__list">
+                            <a href="#" class="nav__link">Features</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="#" class="nav__link">Pricing</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="#" class="nav__link">About</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="#" class="nav__link">Blog</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="#" class="nav__link">Contact</a>
+                        </li>
+        
+                    </ul>
+
+                    <div class="nav__buttons">
+        
+                        <a href="#" class="btn">Log in</a>
+                        <a href="#" class="btn btn--black">Sign up</a>
+        
+                    </div>
+
+                </div>  
+
+            <label for="menu" class="nav__label">
+                
+            </label>
+
+            <input type="checkbox" id="menu">
+
+        </nav>
+
+        <section class="hero__main container">
+
+            <figure class="hero__figure">
+                <img src="{% static 'web/img/illustration.svg'%}" alt="" class="hero__img">
+            </figure>
+
+            <article class="hero__content">
+
+                <h1 class="hero__title">Marketing website</h1>
+
+                <p class="hero__paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Asperiores magni possimus soluta fugiat inventore error 
+                </p>
+
+                <div class="hero__buttons">
+
+                    <a href="#" class="btn">
+                        <img src="{% static 'web/img/download-icon.svg' %}" alt="" class="hero__icon">
+                        Download for free
+                    </a>
+
+                    <a href="" class="btn">
+                        <img src="{% static 'web/img/github.svg' %}" alt="" class="hero__icon"> 
+                        Github Repo
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        
+
+    </header>
+
+    <main>
+
+    </main>
+    
     <script src="{% static 'web/js/script.js' %}"></script>
 </body>
 </html>
