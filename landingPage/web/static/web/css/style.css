@@ -173,7 +173,47 @@ body{
     line-height: 1.8;
 }
 
+/*
 
-.cards__img{
+*/
+
+.cards{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.cards__article{
+    width: 250px;
+    max-width: 500px;
+    flex-grow: 1;
+    display: flex;
+    gap: 1.5rem;
+    
+}
+
+.cards__figure{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #100606;
+}
+
+.cards__text{
+    width: 50%;
+    flex-grow: 1;
+}
+
+.cards__title{
+    font-size: 1.3rem;
+    margin-bottom: .8rem;
+}
+
+.cards__paragraph{
+    line-height: 1.8;
 }
