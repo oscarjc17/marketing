@@ -165,7 +165,7 @@ body{
 }
 
 .about__title{
-    font-size: 2.5rem;
+    font-weight: 300;
 }
 
 .about__paragraph{
@@ -216,4 +216,26 @@ body{
 
 .cards__paragraph{
     line-height: 1.8;
+}
+
+
+.technology{
+    padding: 80px 0;
+}
+
+.technology__title{
+    font-weight: 300;
+    text-align: center;
+}
+
+.technology__container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.technology__img{
+    width: 10%;
+    max-width: 50px;
 }
